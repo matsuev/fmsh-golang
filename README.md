@@ -1,2 +1,4 @@
-# fmsh-golang
-FMSH GoLang lessons
+# ФМШ. Курс "Разработка серверных приложений"
+
+* lesson-01 - Введение. Основы языка GoLang
+* lesson-02 – GoLang. Структуры и интерфейсы
