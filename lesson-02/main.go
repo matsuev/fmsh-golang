@@ -5,12 +5,8 @@ import (
 	"fmt"
 )
 
-type Primitive interface {
-	Move(dx, dy int)
-}
-
 func main() {
-	var p1, p2, p3 Primitive
+	var p1, p2, p3 primitive.Primitive
 
 	p1 = primitive.CreateNewPoint(1, 2, "red")
 	p2 = primitive.CreateNewLine(2, 3, 4, 5, "black")

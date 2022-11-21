@@ -6,7 +6,7 @@ type Point struct {
 	color string
 }
 
-// CreateNewPoint function
+// CreateNewPoint функция создает новый объект типа Point
 func CreateNewPoint(x, y int, c string) *Point {
 	return &Point{
 		x:     x,
