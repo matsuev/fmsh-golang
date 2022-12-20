@@ -89,13 +89,13 @@ func (s *CsvStorage) Scan() bool {
 	return true
 }
 
-// LineArray function
-func (s *CsvStorage) LineArray() []string {
+// GetArray function
+func (s *CsvStorage) GetArray() []string {
 	return s.tmp
 }
 
-// LineMap function
-func (s *CsvStorage) LineMap() map[string]string {
+// GetMap function
+func (s *CsvStorage) GetMap() map[string]string {
 	result := make(map[string]string)
 
 	for index, value := range s.tmp {

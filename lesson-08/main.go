@@ -6,10 +6,11 @@ import (
 	"log"
 )
 
+// DataIterator interface
 type DataIterator interface {
 	Scan() bool
-	LineMap() map[string]string
-	LineArray() []string
+	GetMap() map[string]string
+	GetArray() []string
 	GetHeaders() []string
 }
 
@@ -25,18 +26,7 @@ func main() {
 	}
 
 	for store.Scan() {
-		lineArray := store.LineMap()
-		if lineArray["email"] == "ivan@example.org" {
-			break
-		}
-		fmt.Printf("%#v\n", lineArray)
-	}
-
-	// hjerkhkjshgjkshekltjhewr
-	fmt.Println("Hello, Ivan!!!")
-
-	for store.Scan() {
-		lineArray := store.LineMap()
+		lineArray := store.GetMap()
 		fmt.Printf("%#v\n", lineArray)
 	}
 
