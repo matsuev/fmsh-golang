@@ -26,8 +26,8 @@ func main() {
 	}
 
 	for store.Scan() {
-		lineArray := store.GetMap()
-		fmt.Printf("%#v\n", lineArray)
+		line := store.GetMap()
+		fmt.Printf("%#v\n", line)
 	}
 
 }
